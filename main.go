@@ -8,7 +8,7 @@ import (
 var count int
 
 func main() {
-	http.HandleFunc("/", handler)
+	http.HandleFunc("/countup", handler)
 	http.HandleFunc("/get", countHandler)
 	http.ListenAndServe(":8080", nil)
 }
